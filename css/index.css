@@ -84,12 +84,12 @@ time,
 mark,
 audio,
 video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -104,45 +104,45 @@ hgroup,
 menu,
 nav,
 section {
-	display: block;
+    display: block;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 }
 
 ol,
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+    quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	font-family: 'Titillium Web', sans-serif;
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 h1,
@@ -150,64 +150,60 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: 'Bangers', cursive;
-	letter-spacing: 1px;
-	margin-bottom: 15px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 container {
-	width: 900px;
-	text-align: center;
+    width: 900px;
+    text-align: center;
 }
 
 h1 {
-	font-size: 80px;
+    font-size: 80px;
 }
 
 h2 {
-	font-size: 60px;
+    font-size: 60px;
 }
 
 h3 {
-	font-size: 40px;
+    font-size: 40px;
 }
 
 h4 {
-	font-size: 20px;
+    font-size: 20px;
 }
 
-section,
-header,
-footer,
 container {
-	display: block;
+    display: block;
     margin: 0 auto;
-}
-
-header {
-	display: block;
-    height: 70px;
     width: 900px;
 }
 
-.navLinks{
-    position: fixed;
-    width: 900px;
-	background: linear-gradient(to bottom, #0066cc, white);
-	height: 7%;
-	/* Added 3 flexbox properties and values in accordance to UI-III-flexbox project */
+.navLinks {
+    width: 100%;
+    background: linear-gradient(to bottom, #0066cc, white);
+    /* Added 3 flexbox properties and values in accordance to UI-III-flexbox project */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navLinksText {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
     display: flex;
     justify-content: space-between;
     width: 70%;
+    margin: 5% 1%;
+}
+
+.navLinksLogo {
+    margin:5% 1%;
 }
 
 nav a {
@@ -217,42 +213,42 @@ nav a {
 
 /* Begin section sloganSection */
 .sloganSection {
-	display: flex;
-	/* Added this line to align sloganSection stuff */
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    /* Added this line to align sloganSection stuff */
+    justify-content: center;
+    align-items: center;
 }
 
 .sloganSection textSection,
 .sloganSection imgSection {
-	/* display: inline-block; */
-	/*No longer needed by adding display:flex to parent sloganSection*/
-	text-align: center;
-	margin: 5%;
+    /* display: inline-block; */
+    /*No longer needed by adding display:flex to parent sloganSection*/
+    text-align: center;
+    margin: 5%;
 }
 
 .sloganSection textSection {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
-	border: solid 1px black;
-	color: black;
-	width: 150px;
-	height: 30px;
-	text-align: center;
-	text-decoration: none;
-	background: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    border: solid 1px black;
+    color: black;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button:hover {
-	background: grey;
+    background: grey;
 }
 
 /* End section sloganSection */
@@ -260,44 +256,44 @@ nav a {
 /*Begin section contentStuff */
 
 .contentStuff {
-	border-top: solid black 2px;
-	border-bottom: solid black 1px;
-	padding: 2% 0;
-	margin: 2% 0;
-	display: flex;
-	flex-direction: column;
-	align-content: space-between;
+    border-top: solid black 2px;
+    border-bottom: solid black 1px;
+    padding: 2% 0;
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
 .content1,
 .content2,
 .content3 {
-	/* display:inline-block; */
-	/*No longer needed by adding display:flex to these classes */
-	padding: 2% 0;
-	width: 100%;
-	display: flex;
-	/* added this line align ALL items within these classes */
-	justify-content: space-between;
+    /* display:inline-block; */
+    /*No longer needed by adding display:flex to these classes */
+    padding: 2% 0;
+    width: 100%;
+    display: flex;
+    /* added this line align ALL items within these classes */
+    justify-content: space-between;
 }
 
 .contentStuff .content1 section {
-	text-align: left;
-	/* display: inline-block; */
-	/*No longer needed because display:flex was added to parent class*/
-	width: 49.8%;
+    text-align: left;
+    /* display: inline-block; */
+    /*No longer needed because display:flex was added to parent class*/
+    width: 48%;
 }
 
 .contentStuff img {
-	width: 100%;
+    width: 100%;
 }
 
 .contentStuff .content3 section {
-	text-align: left;
-	/* display: inline-block; */
-	/*No longer needed because display:flex was added to parent class*/
-	margin: 0;
-	width: 32%;
+    text-align: left;
+    /* display: inline-block; */
+    /*No longer needed because display:flex was added to parent class*/
+    margin: 0;
+    width: 32%;
 }
 
 /* End section contentStuff */
@@ -305,11 +301,11 @@ nav a {
 /* Begin section contactSection */
 
 .contactSection {
-	/*anything added in this section WILL flex below the contact information */
-	padding: 2% 0;
-	display: flex;
-	text-align: left;
-	flex-direction: column;
+    /*anything added in this section WILL flex below the contact information */
+    padding: 2% 0;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
 }
 
 /* End section contactSection */
@@ -317,13 +313,13 @@ nav a {
 /* Begin section footer */
 
 footer {
-	margin-top: 2%;
+    margin-top: 2%;
 }
 
 footer div {
-	text-align: center;
-	padding: 4% 0;
-	background: linear-gradient(to top, #0066cc, white);
+    text-align: center;
+    padding: 4% 0;
+    background: linear-gradient(to top, #0066cc, white);
 }
 
 /* End section footer */
@@ -333,79 +329,137 @@ footer div {
 /* Begins the services.html specific CSS */
 
 .servicesSloganSection {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .servicesSloganSection imgSection,
 .services-header-img {
-	width: 100%;
+    width: 100%;
 }
 
 .servicesSloganSection textSection {
-	text-align: left;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	padding: 2% 0;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2% 0;
 }
 
 .servicesContentStuff {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-content: space-between;
-	border-top: solid black 2px;
-	border-bottom: solid black 1px;
-	padding: 2% 0;
-	margin: 2% 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    border-top: solid black 2px;
+    border-bottom: solid black 1px;
+    padding: 2% 0;
+    margin: 2% 0;
 }
 
 .servicesContentStuff div {
-	text-align: left;
-	margin: 2% 0;
-	padding: 3%;
-	width: 48%;
-	border: solid black 1px;
-	display: flex;
-	flex-direction: column;
-	align-content: space-evenly;
-	background: lightgrey;
+    text-align: left;
+    margin: 2% 0;
+    padding: 3%;
+    width: 48%;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    background: lightgrey;
 }
 
 .servicesContentStuff h4,
 .servicesContentStuff p,
 .servicesContentStuff a {
-	margin: 2%;
+    margin: 2%;
 }
 
 .facts {
-	text-align: left;
-	display: flex;
-	justify-content: space-between;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
 }
 
 .facts div {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 2% 0;
-	width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2% 0;
+    width: 48%;
 }
 
 .services-info-img {
-	width: 100%;
+    width: 100%;
 }
 
 /******* Start @media section *******/
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
+    container {
+        width: 800px;
+    }
 
+    .navLinks {
+        flex-direction: column-reverse;
+    }
+
+    .navLinksLogo {
+        margin-top: 4%;
+    }
+
+    .sloganSection img {
+        display: none;
+    }
 }
 
-@media (max-widtH: 500px){
+@media (max-width: 500px) {
+    container {
+        width: 500px;
+    }
 
+    .navLinks {
+        flex-direction: column-reverse;
+    }
+
+    .navLinksLogo, .navLinksText a{
+        border-bottom: solid black 1px;
+        width: 100%;
+        padding: 3%;
+        margin: 0;
+    }
+
+    .navLinksText {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sloganSection {
+        padding: 5% 0;
+    }
+
+    .sloganSection textSection {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sloganSection imgSection {
+        display: none;
+    }
+
+    .content1, .content2, .content3 {
+        flex-direction: column;
+    }
+
+    .contentStuff .content1 section, .contentStuff .content2 section, .contentStuff .content3 section{
+        flex-direction: column;
+        width: 100%;
+        
+        margin: 2% 0;
+    }
 }
