@@ -160,6 +160,8 @@ h5 {
 container {
     width: 900px;
     text-align: center;
+    display: block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -178,14 +180,8 @@ h4 {
     font-size: 20px;
 }
 
-container {
-    display: block;
-    margin: 0 auto;
-    width: 900px;
-}
-
 .navLinks {
-    width: 100%;
+    width: 900px;
     background: linear-gradient(to bottom, #0066cc, white);
     /* Added 3 flexbox properties and values in accordance to UI-III-flexbox project */
     display: flex;
@@ -414,11 +410,15 @@ footer div {
 
     .navLinks {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
-    .navLinksText {
+    .navLinksText
+    {
         margin: 0;
-        padding: 0;
+        padding: 0 1%;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .sloganSection img {
@@ -437,6 +437,7 @@ footer div {
 
     .navLinks {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
     .navLinksLogo,
@@ -452,6 +453,7 @@ footer div {
         width: 100%;
         padding: 0;
         margin: 0;
+        justify-content: center;
     }
 
     .sloganSection {
