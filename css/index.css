@@ -203,7 +203,7 @@ container {
 }
 
 .navLinksLogo {
-    margin:5% 1%;
+    margin: 5% 1%;
 }
 
 nav a {
@@ -248,7 +248,8 @@ nav a {
 }
 
 .button:hover {
-    background: grey;
+    color: red;
+    background: lightyellow;
 }
 
 /* End section sloganSection */
@@ -403,16 +404,29 @@ footer div {
         width: 800px;
     }
 
+    .contentStuff,
+    .contactSection,
+    .servicesSloganSection,
+    .servicesContentStuff,
+    .facts {
+        padding: 0 1%;
+    }
+
     .navLinks {
         flex-direction: column-reverse;
     }
 
-    .navLinksLogo {
-        margin-top: 4%;
+    .navLinksText {
+        margin: 0;
+        padding: 0;
     }
 
     .sloganSection img {
         display: none;
+    }
+
+    .services-header-img {
+        margin-top: 3%;
     }
 }
 
@@ -425,7 +439,8 @@ footer div {
         flex-direction: column-reverse;
     }
 
-    .navLinksLogo, .navLinksText a{
+    .navLinksLogo,
+    .navLinksText a {
         border-bottom: solid black 1px;
         width: 100%;
         padding: 3%;
@@ -452,14 +467,38 @@ footer div {
         display: none;
     }
 
-    .content1, .content2, .content3 {
+    .content1,
+    .content2,
+    .content3 {
         flex-direction: column;
     }
 
-    .contentStuff .content1 section, .contentStuff .content2 section, .contentStuff .content3 section{
+    .contentStuff .content1 section,
+    .contentStuff .content2 section,
+    .contentStuff .content3 section {
         flex-direction: column;
         width: 100%;
-        
         margin: 2% 0;
     }
+
+    .servicesContentStuff {
+        flex-direction: column;
+    }
+
+    .servicesContentStuff div {
+        width: 100%;
+    }
+
+    .facts {
+        flex-direction: column-reverse;
+    }
+
+    .facts div {
+        width: 100%;
+    }
+
+    .facts div p {
+        margin: 1% 0;
+    }
+
 }
